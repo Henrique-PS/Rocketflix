@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+template
+__MACOSX
 
 # Editor directories and files
 .vscode/*
