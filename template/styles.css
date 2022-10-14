@@ -48,6 +48,10 @@ body {
   margin-bottom: 30px;
 }
 
+#film_poster {
+  width: 171px;
+}
+
 #film_title {
   font-size: 20px;
   font-weight: 700;
