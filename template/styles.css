@@ -37,7 +37,22 @@ body {
 }
 
 .film{
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+
+  color: #ffffff;
+
+  width: 628px;
+  margin-bottom: 30px;
+}
+
+#film_title {
+  font-size: 20px;
+  font-weight: 700;
+  
+  margin-bottom: 20px;
 }
 
 .find-film {
