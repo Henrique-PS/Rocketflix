@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+.container {
   display: flex;
   justify-content: center;
 
@@ -36,9 +36,9 @@ body {
   margin-bottom: 30px;
 }
 
-.film{
+.movies, .movie_not_found{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 34px;
 
@@ -48,18 +48,23 @@ body {
   margin-bottom: 30px;
 }
 
-#film_poster {
+.movie_not_found h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#movie_poster {
   width: 171px;
 }
 
-#film_title {
+#movie_title {
   font-size: 20px;
   font-weight: 700;
   
   margin-bottom: 20px;
 }
 
-.find-film {
+.find-movie {
   display: flex;
   align-items: center;
   gap: 17px;
@@ -72,10 +77,9 @@ body {
 
   background-color: #e9e6e3;
   cursor: pointer;
-
 }
 
-.find-film:hover {
+.find-movie:hover {
   filter: brightness(1.2);
 }
 
@@ -83,7 +87,7 @@ body {
   width: 35.5px;
 }
 
-.find-film p {
+.find-movie p {
   color: #000000;
   font-size: 18px;
   font-weight: 700;
