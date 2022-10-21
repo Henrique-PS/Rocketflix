@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <title>Rocketflix</title>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
-<body>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rocketflix</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="container">
+      <div class="content container">
+        <img src="./assets/shuffle.svg" class="shuffle" />
+        <h1>Não sabe o que assistir?</h1>
 
-      <div class="content">
-       <img src="./assets/shuffle.svg" class="shuffle">
-       <h1>Não sabe o que assistir?</h1>
-   
-       <div class="movies" style="display: none;">
-         <img src="" id="movie_poster" alt="Poster do filme">
-         <div class="movie_infos">
-           <h2 id="movie_title"></h2>
-           <p id="movie_description"></p>
-         </div>
-       </div>
-   
-       <div class="movie_not_found" style="display: none;">
-         <img src="./assets/Poster.png" id="film_poster" alt="Poster do filme">
-         <h2>
-           Ops, hoje não é dia de assistir filme. <br>
-           Bora codar! 🚀
-         </h2>
-       </div>
-   
-       <button type="button" class="find-movie" onclick="getMovie()">
-         <img src="./assets/shuffle.svg" class="button-shuffle">
-         <p>Encontrar filme</p>
-       </button>
-   
-       <div class="infos">
-         <p>Clique em "Encontrar filme" que traremos informações</p>
-         <p>de algum filme para você assistir hoje.</p>
-       </div>
-      </div> 
-    </div>
+        <div id="movies" class="display-none">
+          <img id="movie_poster" alt="Poster do filme" />
+          <div class="movie_infos">
+            <h2 id="movie_title"></h2>
+            <p id="movie_description"></p>
+          </div>
+        </div>
 
-  <script src="./main.js"></script>
-</body>
+        <div id="movie_not_found" class="display-none">
+          <img
+            src="./assets/Poster.png"
+          />
+          <h2>
+            Ops, hoje não é dia de assistir filme. <br />
+            Bora codar! 🚀
+          </h2>
+        </div>
+
+        <button type="button" class="find-movie" onclick="getMovie()">
+          <img src="./assets/shuffle.svg" class="button-shuffle" />
+          <p>Encontrar filme</p>
+        </button>
+
+        <div class="infos">
+          <p>Clique em "Encontrar filme" que traremos informações</p>
+          <p>de algum filme para você assistir hoje.</p>
+        </div>
+      </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
